@@ -1,0 +1,133 @@
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+  
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #1d3557; /* Azul escuro elegante */
+    color: white;
+}
+  
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+  
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+  
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+  
+.nav-links li a:hover {
+    color: #a8dadc; /* Azul claro */
+}
+  
+#hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f1faee; /* Fundo claro */
+    color: #1d3557;
+}
+  
+.cta-button {
+    display: inline-block;
+    background: #457b9d; /* Azul médio */
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+  
+.cta-button:hover {
+    background: #1d3557;
+}
+  
+#services {
+    padding: 40px 20px;
+    background: #a8dadc; /* Fundo azul claro */
+    color: #1d3557;
+    text-align: center;
+}
+  
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+  
+.service {
+    flex: 1 1 calc(30% - 40px);
+    max-width: calc(30% - 40px);
+    background: #f1faee;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+  
+.service:hover {
+    transform: translateY(-10px);
+}
+  
+.service h3 {
+    color: #457b9d;
+}
+  
+footer {
+    background: #1d3557;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 14px;
+}
+  
+.social-links a {
+    color: #a8dadc;
+    text-decoration: none;
+}
+  
+.social-links a:hover {
+    text-decoration: underline;
+}
+  
+/* Responsividade */
+@media (max-width: 768px) {
+    .services-container {
+        flex-direction: column;
+        gap: 15px;
+}
+  
+.service {
+      flex: 1 1 100%;
+      max-width: 100%;
+}
+  
+    header {
+      flex-direction: column;
+      align-items: center;
+}
+  
+.nav-links {
+      flex-direction: column;
+      gap: 10px;
+}
+}  
