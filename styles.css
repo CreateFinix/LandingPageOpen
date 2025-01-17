@@ -162,13 +162,115 @@ hr {
     margin: 20px 0;
 }
 
+/* Estilo geral para o chatbot */
+#chatbot {
+    background: #457b9d;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    margin: 40px 0;
+}
+
+#chatbox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #f1faee;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#chat-history {
+    max-height: 300px;
+    overflow-y: auto;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 8px;
+    background-color: #f1faee;
+    box-sizing: border-box;
+}
+
+/* Estilo das mensagens no histórico */
+#chat-history div {
+    margin: 10px 0;
+    color: #457b9d;
+    background-color: #f1faee;
+}
+
+/* Estilo do campo de entrada de texto */
+#user-input {
+    width: 100%;
+    padding: 12px; /* Aumentando o padding para melhor usabilidade */
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px; /* Aumentando o tamanho da fonte para telas menores */
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+/* Estilo do botão de envio */
+#chatbox button {
+    padding: 12px 20px;
+    margin-top: 10px;
+    background: #1d3557;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%; /* Torna o botão responsivo */
+}
+
+#chatbox button:hover {
+    background: #457b9d;
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
     body {
         font-size: 14px;
     }
 
-    
+    /* Ajuste no tamanho do chatbox em dispositivos móveis */
+    #chatbox {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    #chat-history {
+        max-height: 200px; /* Ajuste a altura do histórico para telas menores */
+        padding: 8px; /* Menos padding para otimizar o espaço */
+    }
+
+    #user-input {
+        font-size: 16px;
+        padding: 12px;
+        margin-top: 10px;
+    }
+
+    #chatbox button {
+        padding: 12px 20px;
+        width: 100%; /* Garantir que o botão ocupe toda a largura do chatbox */
+    }
+
+    /* Ajustar espaçamento entre as mensagens */
+    #chat-history div {
+        margin: 8px 0; /* Menos espaçamento entre as mensagens */
+    }
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
 
     .services-container {
         flex-direction: column;
@@ -188,7 +290,6 @@ hr {
     .nav-links {
         display: flex;
         justify-content: center;
-        /*flex-direction: column;*/
         gap: 20px;
         padding: 10px 0;
     }
@@ -215,5 +316,10 @@ hr {
     
     footer p {
         font-size: 12px;
+    }
+
+    #chatbox {
+        max-width: 100%;
+        padding: 10px;
     }
 }
