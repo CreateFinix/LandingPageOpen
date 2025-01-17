@@ -1,0 +1,17 @@
+# Ignorar a pasta node_modules
+node_modules/
+
+# Ignorar o package-lock.json
+package-lock.json
+
+# Ignorar arquivos de log
+*.log
+
+# Ignorar arquivos de ambiente (exemplo .env)
+.env
+
+# Ignorar IDEs específicas (exemplo do Visual Studio Code)
+.vscode/
+
+# Ignorar sistemas de backup e arquivos temporários
+*.swp
