@@ -6,7 +6,7 @@ body {
     color: #333;
     scroll-behavior: smooth;
 }
-  
+
 header {
     display: flex;
     justify-content: space-between;
@@ -14,37 +14,47 @@ header {
     padding: 20px;
     background: #1d3557; /* Azul escuro elegante */
     color: white;
+    flex-wrap: wrap; /* Permite quebra em telas pequenas */
 }
-  
+
 header .logo {
     font-size: 24px;
     font-weight: bold;
 }
-  
+
 .nav-links {
     list-style: none;
     display: flex;
     gap: 15px;
 }
-  
+
 .nav-links li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
-  
+
 .nav-links li a:hover {
     color: #a8dadc; /* Azul claro */
 }
-  
+
 #hero {
     text-align: center;
     padding: 60px 20px;
     background: #f1faee; /* Fundo claro */
     color: #1d3557;
+    font-size: 1.2rem; /* Ajuste para dispositivos móveis */
 }
-  
+
+#hero h1 {
+    font-size: 2rem; /* Ajuste do tamanho da fonte */
+}
+
+#hero p {
+    font-size: 1rem;
+}
+
 .cta-button {
     display: inline-block;
     background: #457b9d; /* Azul médio */
@@ -56,25 +66,26 @@ header .logo {
     text-decoration: none;
     transition: background 0.3s ease;
 }
-  
+
 .cta-button:hover {
     background: #1d3557;
 }
-  
+
 #services {
     padding: 40px 20px;
     background: #a8dadc; /* Fundo azul claro */
     color: #1d3557;
     text-align: center;
 }
-  
+
 .services-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    padding: 20px;
 }
-  
+
 .service {
     flex: 1 1 calc(30% - 40px);
     max-width: calc(30% - 40px);
@@ -90,62 +101,58 @@ header .logo {
     margin-bottom: 15px;
     display: block;
 }
-  
+
 .service:hover {
     transform: translateY(-10px);
 }
-  
+
 .service h3 {
     color: #457b9d;
 }
-  
+
 footer {
     background-color: #1d3557; /* Azul escuro */
     color: white;
     text-align: center;
     padding: 20px;
     font-size: 14px;
-  }
-  
-  footer a {
+}
+
+footer a {
     color: #a8dadc; /* Azul claro */
     text-decoration: none;
     margin: 0 10px;
     transition: color 0.3s ease;
-  }
-  
-  footer a:hover {
+}
+
+footer a:hover {
     color: #f1faee; /* Branco */
-  }
-  
-  .social-links a {
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
     margin: 0 10px;
     font-size: 20px;
-  }
-  
-  .footer-navigation a {
-    margin: 0 15px;
-    font-weight: bold;
-  }
-  
-  .footer-navigation {
-    margin-top: 10px;
-  }
-  
-  
-.social-links a {
     color: #a8dadc;
     text-decoration: none;
-    font-size: 20px;
-    margin: 0;
     transition: color 0.3s ease;
 }
-  
+
 .social-links a:hover {
     text-decoration: underline;
     color: #f1faee;
     transform: scale(1.1);
     transition: all 0.3s ease;
+}
+
+.footer-navigation {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
 hr {
@@ -155,16 +162,13 @@ hr {
     margin: 20px 0;
 }
 
-  
 /* Responsividade */
 @media (max-width: 768px) {
     body {
         font-size: 14px;
     }
 
-    footer p {
-        font-size: 12px;
-    }
+    
 
     .services-container {
         flex-direction: column;
@@ -175,15 +179,18 @@ hr {
         flex: 1 1 100%;
         max-width: 100%;
     }
-  
+
     header {
         flex-direction: column;
         align-items: center;
     }
-  
+
     .nav-links {
-        flex-direction: column;
-        gap: 10px;
+        display: flex;
+        justify-content: center;
+        /*flex-direction: column;*/
+        gap: 20px;
+        padding: 10px 0;
     }
 
     footer {
@@ -205,4 +212,8 @@ hr {
         gap: 15px;
         padding: 10px 0;
     }
-}  
+    
+    footer p {
+        font-size: 12px;
+    }
+}
