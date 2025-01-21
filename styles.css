@@ -110,6 +110,46 @@ header .logo {
     color: #457b9d;
 }
 
+#portifolios {
+    padding: 40px 20px;
+    background: #a8dadc; /* Fundo azul claro */
+    color: #1d3557;
+    text-align: center;
+}
+
+.portifolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.portifolio {
+    flex: 1 1 calc(30% - 40px);
+    max-width: calc(30% - 40px);
+    background: #f1faee;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.portifolio i {
+    color: #457b9d; /* Azul médio */
+    margin-bottom: 15px;
+    display: block;
+}
+
+.portifolio:hover {
+    transform: translateY(-10px);
+}
+
+.portifolio h3 {
+    color: #457b9d;
+}
+
+
 footer {
     background-color: #1d3557; /* Azul escuro */
     color: white;
